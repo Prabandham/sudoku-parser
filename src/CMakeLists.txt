@@ -1,14 +1,14 @@
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=gnu++14")
 
-find_package( OpenCV 3.1.0 REQUIRED core)
+find_package( OpenCV 4.0.1 REQUIRED core)
 
 include_directories( ${OpenCV_INCLUDE_DIRS})
 
-set(OpenCV_LIBS opencv_core opencv_objdetect)
+set(OpenCV_LIBS opencv_core opencv_objdetect opencv_ml opencv_imgcodecs opencv_highgui)
 
 MESSAGE("OpenCV version : ${OpenCV_VERSION}")
 
-find_package(OpenCL REQUIRED)
+# find_package(OpenCL REQUIRED)
 
 
 add_library(sudoku lib/sudoku.cpp)

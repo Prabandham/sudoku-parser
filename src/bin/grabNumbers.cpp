@@ -22,7 +22,7 @@ int main(int argc, char **argv)
         filePath = argv[1];
     }
 
-    Mat image = imread(filePath, CV_LOAD_IMAGE_GRAYSCALE);
+    Mat image = imread(filePath, 0);
  
     // prepare knn
     string raw_features_path("./../assets/config/raw-features.yml"); // created by prepareData

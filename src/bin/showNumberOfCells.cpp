@@ -51,7 +51,7 @@ int main(int argc, char **argv)
 
             cout << fullName << endl;
 
-            raw = imread(fullName, CV_LOAD_IMAGE_GRAYSCALE);
+            raw = imread(fullName, 0);
 
             Mat preprocessed = preprocess(raw.clone(), true);
 

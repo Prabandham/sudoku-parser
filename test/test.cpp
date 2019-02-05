@@ -53,7 +53,7 @@ BOOST_AUTO_TEST_CASE(sudoku_s0)
 {
     cout << "\nsudoku_s0" << endl;
     string filePath("../../assets/puzzles/s0.jpg");
-    Mat image = imread(filePath, CV_LOAD_IMAGE_GRAYSCALE);
+    Mat image = imread(filePath, 0);
 
     ExtractionInformation extractInfo;
     Mat preprocessed = preprocess(image.clone(), true);
@@ -78,7 +78,7 @@ BOOST_AUTO_TEST_CASE(sudoku_s1)
 {
     cout << "\nsudoku_s1" << endl;
     string filePath("../../assets/puzzles/s1.jpg");
-    Mat image = imread(filePath, CV_LOAD_IMAGE_GRAYSCALE);
+    Mat image = imread(filePath, 0);
 
     ExtractionInformation extractInfo;
     Mat preprocessed = preprocess(image.clone(), true);
@@ -103,7 +103,7 @@ BOOST_AUTO_TEST_CASE(sudoku_s2)
 {
     cout << "\nsudoku_s2" << endl;
     string filePath("../../assets/puzzles/s2.jpg");
-    Mat image = imread(filePath, CV_LOAD_IMAGE_GRAYSCALE);
+    Mat image = imread(filePath, 0);
 
     ExtractionInformation extractInfo;
     Mat preprocessed = preprocess(image.clone(), true);
@@ -128,7 +128,7 @@ BOOST_AUTO_TEST_CASE(sudoku_s3)
 {
     cout << "\nsudoku_s3" << endl;
     string filePath("../../assets/puzzles/s3.jpg");
-    Mat image = imread(filePath, CV_LOAD_IMAGE_GRAYSCALE);
+    Mat image = imread(filePath, 0);
 
     ExtractionInformation extractInfo;
     Mat preprocessed = preprocess(image.clone(), true);
@@ -153,7 +153,7 @@ BOOST_AUTO_TEST_CASE(sudoku_s4)
 {
     cout << "\nsudoku_s4" << endl;
     string filePath("../../assets/puzzles/s4.jpg");
-    Mat image = imread(filePath, CV_LOAD_IMAGE_GRAYSCALE);
+    Mat image = imread(filePath, 0);
 
     ExtractionInformation extractInfo;
     Mat preprocessed = preprocess(image.clone(), true);
@@ -178,7 +178,7 @@ BOOST_AUTO_TEST_CASE(sudoku_s5)
 {
     cout << "\nsudoku_s5" << endl;
     string filePath("../../assets/puzzles/s5.jpg");
-    Mat image = imread(filePath, CV_LOAD_IMAGE_GRAYSCALE);
+    Mat image = imread(filePath, 0);
 
     ExtractionInformation extractInfo;
     Mat preprocessed = preprocess(image.clone(), true);
@@ -203,7 +203,7 @@ BOOST_AUTO_TEST_CASE(sudoku_s6)
 {
     cout << "\nsudoku_s6" << endl;
     string filePath("../../assets/puzzles/s6.jpg");
-    Mat image = imread(filePath, CV_LOAD_IMAGE_GRAYSCALE);
+    Mat image = imread(filePath, 0);
 
     ExtractionInformation extractInfo;
     Mat preprocessed = preprocess(image.clone(), true);
@@ -228,7 +228,7 @@ BOOST_AUTO_TEST_CASE(sudoku_s7)
 {
     cout << "\nsudoku_s7" << endl;
     string filePath("../../assets/puzzles/s7.jpg");
-    Mat image = imread(filePath, CV_LOAD_IMAGE_GRAYSCALE);
+    Mat image = imread(filePath, 0);
 
     ExtractionInformation extractInfo;
     Mat preprocessed = preprocess(image.clone(), true);
@@ -253,7 +253,7 @@ BOOST_AUTO_TEST_CASE(sudoku_s8)
 {
     cout << "\nsudoku_s8" << endl;
     string filePath("../../assets/puzzles/s8.jpg");
-    Mat image = imread(filePath, CV_LOAD_IMAGE_GRAYSCALE);
+    Mat image = imread(filePath, 0);
 
     ExtractionInformation extractInfo;
     Mat preprocessed = preprocess(image.clone(), true);
@@ -278,7 +278,7 @@ BOOST_AUTO_TEST_CASE(sudoku_s9)
 {
     cout << "\nsudoku_s9" << endl;
     string filePath("../../assets/puzzles/s9.jpg");
-    Mat image = imread(filePath, CV_LOAD_IMAGE_GRAYSCALE);
+    Mat image = imread(filePath, 0);
 
     ExtractionInformation extractInfo;
     Mat preprocessed = preprocess(image.clone(), true);
@@ -303,7 +303,7 @@ BOOST_AUTO_TEST_CASE(sudoku_s10)
 {
     cout << "\nsudoku_s10" << endl;
     string filePath("../../assets/puzzles/s10.jpg");
-    Mat image = imread(filePath, CV_LOAD_IMAGE_GRAYSCALE);
+    Mat image = imread(filePath, 0);
 
     ExtractionInformation extractInfo;
     Mat preprocessed = preprocess(image.clone(), true);
@@ -328,7 +328,7 @@ BOOST_AUTO_TEST_CASE(sudoku_s11)
 {
     cout << "\nsudoku_s11" << endl;
     string filePath("../../assets/puzzles/s11.jpg");
-    Mat image = imread(filePath, CV_LOAD_IMAGE_GRAYSCALE);
+    Mat image = imread(filePath, 0);
 
     ExtractionInformation extractInfo;
     Mat preprocessed = preprocess(image.clone(), true);
@@ -353,7 +353,7 @@ BOOST_AUTO_TEST_CASE(sudoku_s12)
 {
     cout << "\nsudoku_s12" << endl;
     string filePath("../../assets/puzzles/s12.jpg");
-    Mat image = imread(filePath, CV_LOAD_IMAGE_GRAYSCALE);
+    Mat image = imread(filePath, 0);
 
     ExtractionInformation extractInfo;
     Mat preprocessed = preprocess(image.clone(), true);
@@ -378,7 +378,7 @@ BOOST_AUTO_TEST_CASE(sudoku_s13)
 {
     cout << "\nsudoku_s13" << endl;
     string filePath("../../assets/puzzles/s13.jpg");
-    Mat image = imread(filePath, CV_LOAD_IMAGE_GRAYSCALE);
+    Mat image = imread(filePath, 0);
 
     ExtractionInformation extractInfo;
     Mat preprocessed = preprocess(image.clone(), true);
@@ -403,7 +403,7 @@ BOOST_AUTO_TEST_CASE(sudoku_s14)
 {
     cout << "\nsudoku_s14" << endl;
     string filePath("../../assets/puzzles/s14.jpg");
-    Mat image = imread(filePath, CV_LOAD_IMAGE_GRAYSCALE);
+    Mat image = imread(filePath, 0);
 
     ExtractionInformation extractInfo;
     Mat preprocessed = preprocess(image.clone(), true);
@@ -428,7 +428,7 @@ BOOST_AUTO_TEST_CASE(sudoku_s15)
 {
     cout << "\nsudoku_s15" << endl;
     string filePath("../../assets/puzzles/s15.jpg");
-    Mat image = imread(filePath, CV_LOAD_IMAGE_GRAYSCALE);
+    Mat image = imread(filePath, 0);
 
     ExtractionInformation extractInfo;
     Mat preprocessed = preprocess(image.clone(), true);
@@ -453,7 +453,7 @@ BOOST_AUTO_TEST_CASE(sudoku_s16)
 {
     cout << "\nsudoku_s16" << endl;
     string filePath("../../assets/puzzles/s16.jpg");
-    Mat image = imread(filePath, CV_LOAD_IMAGE_GRAYSCALE);
+    Mat image = imread(filePath, 0);
 
     ExtractionInformation extractInfo;
     Mat preprocessed = preprocess(image.clone(), true);
@@ -478,7 +478,7 @@ BOOST_AUTO_TEST_CASE(sudoku_s17)
 {
     cout << "\nsudoku_s17" << endl;
     string filePath("../../assets/puzzles/s17.jpg");
-    Mat image = imread(filePath, CV_LOAD_IMAGE_GRAYSCALE);
+    Mat image = imread(filePath, 0);
 
     ExtractionInformation extractInfo;
     Mat preprocessed = preprocess(image.clone(), true);
@@ -503,7 +503,7 @@ BOOST_AUTO_TEST_CASE(sudoku_s18)
 {
     cout << "\nsudoku_s18" << endl;
     string filePath("../../assets/puzzles/s18.jpg");
-    Mat image = imread(filePath, CV_LOAD_IMAGE_GRAYSCALE);
+    Mat image = imread(filePath, 0);
 
     ExtractionInformation extractInfo;
     Mat preprocessed = preprocess(image.clone(), true);
@@ -528,7 +528,7 @@ BOOST_AUTO_TEST_CASE(sudoku_s19)
 {
     cout << "\nsudoku_s19" << endl;
     string filePath("../../assets/puzzles/s19.jpg");
-    Mat image = imread(filePath, CV_LOAD_IMAGE_GRAYSCALE);
+    Mat image = imread(filePath, 0);
 
     ExtractionInformation extractInfo;
     Mat preprocessed = preprocess(image.clone(), true);
@@ -553,7 +553,7 @@ BOOST_AUTO_TEST_CASE(sudoku_s20)
 {
     cout << "\nsudoku_s20" << endl;
     string filePath("../../assets/puzzles/s20.jpg");
-    Mat image = imread(filePath, CV_LOAD_IMAGE_GRAYSCALE);
+    Mat image = imread(filePath, 0);
 
     ExtractionInformation extractInfo;
     Mat preprocessed = preprocess(image.clone(), true);
@@ -578,7 +578,7 @@ BOOST_AUTO_TEST_CASE(sudoku_s21)
 {
     cout << "\nsudoku_s21" << endl;
     string filePath("../../assets/puzzles/s21.jpg");
-    Mat image = imread(filePath, CV_LOAD_IMAGE_GRAYSCALE);
+    Mat image = imread(filePath, 0);
 
     ExtractionInformation extractInfo;
     Mat preprocessed = preprocess(image.clone(), true);
@@ -603,7 +603,7 @@ BOOST_AUTO_TEST_CASE(sudoku_s22)
 {
     cout << "\nsudoku_s22" << endl;
     string filePath("../../assets/puzzles/s22.jpg");
-    Mat image = imread(filePath, CV_LOAD_IMAGE_GRAYSCALE);
+    Mat image = imread(filePath, 0);
 
     ExtractionInformation extractInfo;
     Mat preprocessed = preprocess(image.clone(), true);
@@ -628,7 +628,7 @@ BOOST_AUTO_TEST_CASE(sudoku_s23)
 {
     cout << "\nsudoku_s23" << endl;
     string filePath("../../assets/puzzles/s23.jpg");
-    Mat image = imread(filePath, CV_LOAD_IMAGE_GRAYSCALE);
+    Mat image = imread(filePath, 0);
 
     ExtractionInformation extractInfo;
     Mat preprocessed = preprocess(image.clone(), true);
@@ -653,7 +653,7 @@ BOOST_AUTO_TEST_CASE(sudoku_s24)
 {
     cout << "\nsudoku_s24" << endl;
     string filePath("../../assets/puzzles/s24.jpg");
-    Mat image = imread(filePath, CV_LOAD_IMAGE_GRAYSCALE);
+    Mat image = imread(filePath, 0);
 
     ExtractionInformation extractInfo;
     Mat preprocessed = preprocess(image.clone(), true);
@@ -678,7 +678,7 @@ BOOST_AUTO_TEST_CASE(sudoku_s25)
 {
     cout << "\nsudoku_s25" << endl;
     string filePath("../../assets/puzzles/s25.jpg");
-    Mat image = imread(filePath, CV_LOAD_IMAGE_GRAYSCALE);
+    Mat image = imread(filePath, 0);
 
     ExtractionInformation extractInfo;
     Mat preprocessed = preprocess(image.clone(), true);
@@ -703,7 +703,7 @@ BOOST_AUTO_TEST_CASE(sudoku_s26)
 {
     cout << "\nsudoku_s26" << endl;
     string filePath("../../assets/puzzles/s26.jpg");
-    Mat image = imread(filePath, CV_LOAD_IMAGE_GRAYSCALE);
+    Mat image = imread(filePath, 0);
 
     ExtractionInformation extractInfo;
     Mat preprocessed = preprocess(image.clone(), true);
@@ -728,7 +728,7 @@ BOOST_AUTO_TEST_CASE(sudoku_s27)
 {
     cout << "\nsudoku_s27" << endl;
     string filePath("../../assets/puzzles/s27.jpg");
-    Mat image = imread(filePath, CV_LOAD_IMAGE_GRAYSCALE);
+    Mat image = imread(filePath, 0);
 
     ExtractionInformation extractInfo;
     Mat preprocessed = preprocess(image.clone(), true);
@@ -753,7 +753,7 @@ BOOST_AUTO_TEST_CASE(sudoku_s28)
 {
     cout << "\nsudoku_s28" << endl;
     string filePath("../../assets/puzzles/s28.jpg");
-    Mat image = imread(filePath, CV_LOAD_IMAGE_GRAYSCALE);
+    Mat image = imread(filePath, 0);
 
     ExtractionInformation extractInfo;
     Mat preprocessed = preprocess(image.clone(), true);
@@ -778,7 +778,7 @@ BOOST_AUTO_TEST_CASE(sudoku_s29)
 {
     cout << "\nsudoku_s29" << endl;
     string filePath("../../assets/puzzles/s29.jpg");
-    Mat image = imread(filePath, CV_LOAD_IMAGE_GRAYSCALE);
+    Mat image = imread(filePath, 0);
 
     ExtractionInformation extractInfo;
     Mat preprocessed = preprocess(image.clone(), true);
@@ -803,7 +803,7 @@ BOOST_AUTO_TEST_CASE(sudoku_s30)
 {
     cout << "\nsudoku_s30" << endl;
     string filePath("../../assets/puzzles/s30.jpg");
-    Mat image = imread(filePath, CV_LOAD_IMAGE_GRAYSCALE);
+    Mat image = imread(filePath, 0);
 
     ExtractionInformation extractInfo;
     Mat preprocessed = preprocess(image.clone(), true);
@@ -828,7 +828,7 @@ BOOST_AUTO_TEST_CASE(sudoku_s31)
 {
     cout << "\nsudoku_s31" << endl;
     string filePath("../../assets/puzzles/s31.jpg");
-    Mat image = imread(filePath, CV_LOAD_IMAGE_GRAYSCALE);
+    Mat image = imread(filePath, 0);
 
     ExtractionInformation extractInfo;
     Mat preprocessed = preprocess(image.clone(), true);
@@ -853,7 +853,7 @@ BOOST_AUTO_TEST_CASE(sudoku_s32)
 {
     cout << "\nsudoku_s32" << endl;
     string filePath("../../assets/puzzles/s32.jpg");
-    Mat image = imread(filePath, CV_LOAD_IMAGE_GRAYSCALE);
+    Mat image = imread(filePath, 0);
 
     ExtractionInformation extractInfo;
     Mat preprocessed = preprocess(image.clone(), true);
@@ -878,7 +878,7 @@ BOOST_AUTO_TEST_CASE(sudoku_s33)
 {
     cout << "\nsudoku_s33" << endl;
     string filePath("../../assets/puzzles/s33.jpg");
-    Mat image = imread(filePath, CV_LOAD_IMAGE_GRAYSCALE);
+    Mat image = imread(filePath, 0);
 
     ExtractionInformation extractInfo;
     Mat preprocessed = preprocess(image.clone(), true);
@@ -903,7 +903,7 @@ BOOST_AUTO_TEST_CASE(sudoku_s34)
 {
     cout << "\nsudoku_s34" << endl;
     string filePath("../../assets/puzzles/s34.jpg");
-    Mat image = imread(filePath, CV_LOAD_IMAGE_GRAYSCALE);
+    Mat image = imread(filePath, 0);
 
     ExtractionInformation extractInfo;
     Mat preprocessed = preprocess(image.clone(), true);
@@ -928,7 +928,7 @@ BOOST_AUTO_TEST_CASE(sudoku_s35)
 {
     cout << "\nsudoku_s35" << endl;
     string filePath("../../assets/puzzles/s35.jpg");
-    Mat image = imread(filePath, CV_LOAD_IMAGE_GRAYSCALE);
+    Mat image = imread(filePath, 0);
 
     ExtractionInformation extractInfo;
     Mat preprocessed = preprocess(image.clone(), true);
@@ -953,7 +953,7 @@ BOOST_AUTO_TEST_CASE(sudoku_s36)
 {
     cout << "\nsudoku_s36" << endl;
     string filePath("../../assets/puzzles/s36.jpg");
-    Mat image = imread(filePath, CV_LOAD_IMAGE_GRAYSCALE);
+    Mat image = imread(filePath, 0);
 
     ExtractionInformation extractInfo;
     Mat preprocessed = preprocess(image.clone(), true);
@@ -978,7 +978,7 @@ BOOST_AUTO_TEST_CASE(sudoku_s37)
 {
     cout << "\nsudoku_s37" << endl;
     string filePath("../../assets/puzzles/s37.jpg");
-    Mat image = imread(filePath, CV_LOAD_IMAGE_GRAYSCALE);
+    Mat image = imread(filePath, 0);
 
     ExtractionInformation extractInfo;
     Mat preprocessed = preprocess(image.clone(), true);
@@ -1003,7 +1003,7 @@ BOOST_AUTO_TEST_CASE(sudoku_s38)
 {
     cout << "\nsudoku_s38" << endl;
     string filePath("../../assets/puzzles/s38.jpg");
-    Mat image = imread(filePath, CV_LOAD_IMAGE_GRAYSCALE);
+    Mat image = imread(filePath, 0);
 
     ExtractionInformation extractInfo;
     Mat preprocessed = preprocess(image.clone(), true);

@@ -37,7 +37,7 @@ Mat removeTinyVolume(Mat input, int area, Scalar color)
     // we draw to the color of the background
     Mat output = input.clone();
     vector<vector<Point>> contours;
-    findContours(input, contours, RETR_LIST, CV_CHAIN_APPROX_SIMPLE);
+    findContours(input, contours, RETR_LIST, CHAIN_APPROX_SIMPLE);
 
     // cout << "contours : " << contours.size() << endl;
 
@@ -441,7 +441,7 @@ vector<Point> findBiggestBlob(Mat preprocessed, Mat original)
     vector<Point> approx;
     vector<Point> biggestApprox;
 
-    findContours(preprocessed.clone(), contours, RETR_EXTERNAL, CV_CHAIN_APPROX_SIMPLE); // RETR_TREE
+    findContours(preprocessed.clone(), contours, RETR_EXTERNAL, CHAIN_APPROX_SIMPLE); // RETR_TREE
 
     for (int i = 0; i < contours.size(); i++)
     {
@@ -752,7 +752,7 @@ Mat drawAllContour(Mat preprocessed)
     Mat output = Mat::zeros(preprocessed.rows, preprocessed.cols, preprocessed.type());
     Scalar white(255, 255, 255);
     vector<vector<Point>> contours;
-    findContours(preprocessed, contours, RETR_EXTERNAL, CV_CHAIN_APPROX_SIMPLE);
+    findContours(preprocessed, contours, RETR_EXTERNAL, CHAIN_APPROX_SIMPLE);
 
     // cout << "contours : " << contours.size() << endl;
 
@@ -841,7 +841,7 @@ Mat drawAllApprox(Mat preprocessed)
     vector<vector<Point>> contours;
     std::vector<Point> approx;
 
-    findContours(preprocessed.clone(), contours, RETR_EXTERNAL, CV_CHAIN_APPROX_SIMPLE);
+    findContours(preprocessed.clone(), contours, RETR_EXTERNAL, CHAIN_APPROX_SIMPLE);
 
     for (int i = 0; i < contours.size(); i++)
     {
@@ -867,7 +867,7 @@ Mat drawAllApprox(Mat preprocessed, Mat origial)
     vector<vector<Point>> contours;
     std::vector<Point> approx;
 
-    findContours(preprocessed.clone(), contours, RETR_EXTERNAL, CV_CHAIN_APPROX_SIMPLE);
+    findContours(preprocessed.clone(), contours, RETR_EXTERNAL, CHAIN_APPROX_SIMPLE);
 
     for (int i = 0; i < contours.size(); i++)
     {
@@ -1684,7 +1684,7 @@ string grabNumbers(Mat extractedPuzzle, Ptr<ml::KNearest> knn)
 
     InputOutputArray noArr = noArray();
 
-    // raw = imread(filePath, CV_LOAD_IMAGE_GRAYSCALE);
+    // raw = imread(filePath, 0);
 
     for (int k = 0; k < 81; k++)
     {

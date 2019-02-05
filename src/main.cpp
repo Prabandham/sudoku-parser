@@ -35,7 +35,7 @@ int main(int argc, char **argv)
         filePath = argv[1];
     }
 
-    Mat original = imread(filePath, CV_LOAD_IMAGE_GRAYSCALE);
+    Mat original = imread(filePath, 0);
 
     Mat result = mouline(original);
 

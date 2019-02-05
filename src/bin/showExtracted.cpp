@@ -118,7 +118,7 @@ int main(int argc, char **argv)
         cout << files[fileNumber] << endl;
         string fileName = files[fileNumber];
 
-        raw = imread(fileName, CV_LOAD_IMAGE_GRAYSCALE);
+        raw = imread(fileName, 0);
 
         Mat preprocessed = preprocess(raw.clone(), true);
         vector<Point> biggestApprox = findBiggestBlob(preprocessed, raw);
