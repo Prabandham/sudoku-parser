@@ -1,11 +1,14 @@
 # Sudoku-recognizer
 
+# NOTE
+This is a Fork of https://github.com/BenNG/sudoku-recognizer with tweaks to run on the latest version of OpenCV 4.0.1
+
 ## Requirement
 * CMake [[sources](https://cmake.org/)]  
 * Boost v.1.58.0 (test only) [[sources]](http://www.boost.org/users/history/version_1_58_0.html)
 * OpenCV 4.0.1 [[sources](http://opencv.org/)] [[more info](https://docs.opencv.org/4.0.1/index.html)]
   - build for desktop application
-    - Download, extract and get yourself inside the sources of OpenCV 3.1.0 and create a `build` folder. Then:
+    - Download, extract and get yourself inside the sources of OpenCV 4.0.1 and create a `build` folder. Then:
     ```
     cd build
     # CMAKE_BUILD_TYPE could either "Release" or "Debug".
